@@ -1,0 +1,218 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(235, 234, 233);
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(https://fonts.googleapis.com/css2?);
+  }
+.header{
+    background-image: url("images/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 600px;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    padding: 10px;
+    background-color: rgb(33, 169, 179);
+    border: 0ch;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50px;
+    width: 30%;
+}
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    gap: 10px;
+    
+}
+.extras{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.intro{
+    text-align: center;
+    align-self: center;
+    width: 30%;
+    margin: 5%;
+}
+.examples{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: -50px 0 50px 0;
+    gap: 20px;
+    
+}
+.examplescontent{
+    box-sizing: border-box;
+    width: 300px;
+    padding: 25px;
+    background-color: white;
+
+}
+.examples2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 300px;
+}
+.examplescontent2{
+    width: 200px;
+    padding: 10px;
+}
+.industry{
+    text-align: center;
+}
+
+.profiles, .partners{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
+.partners{
+    justify-content: space-evenly;
+    width: 70%;
+    align-self: center;
+    margin-top: 200px;
+}
+.prfile{
+    width: 200px;
+    padding: 10px;
+    background-color: white;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px rgb(219, 218, 218) solid;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.newsletter{
+    background-image: linear-gradient(to right, blue, purple);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 70%;
+    align-self: center;
+    margin-top: 30px;
+}
+
+.pricing{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.title{
+    text-align: center;
+}
+.packages, .branches, .appointment, .consulting, .footer{
+    display: flex;
+    justify-content: space-around;
+}
+.package, .footersect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.branches{
+    background-color: rgb(56, 56, 90);
+    height: 400px;
+    padding: 30px;
+    color: white;
+}
+.branch{
+    width: 30%;
+
+}
+.appointment{
+    margin-top: -150px;
+    gap: 0;
+    width: 50%;
+    align-self: center;
+    height: 400px;
+}
+.appointment img{
+    width: 35%;
+}
+.appointment input{
+    background-color: rgb(235, 234, 233);
+    padding: 10px;
+    border: rgb(177, 176, 176);
+    border-radius: 5px;
+}
+.appointment form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 20px;
+    width: 65%;
+}
+
+.package{
+    border: 1px skyblue solid;
+    border-radius: 5px;
+    width: 33%;
+    background-color: white;
+
+    
+}
+.package:hover{
+    background-color: rgb(34, 34, 85);
+    color: white;
+    margin-top: -10px;
+}
+.packages{
+    margin: 20px 0;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.consulting button{
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    height: 35px;
+}
+.consulting{
+    margin: 50px 0;
+}
+.footersect a{
+    color: black;
+}
