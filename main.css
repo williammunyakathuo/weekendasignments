@@ -1,14 +1,31 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: rgb(235, 234, 233);
+    background-color: rgb(248, 248, 248);
     display: flex;
     flex-direction: column;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
+    line-height: 30px;
 }
 @font-face {
     font-family: Montserrat;
     src: url(https://fonts.googleapis.com/css2?);
+  }
+ion-icon{
+    width: 30px;
+    height: 30px;
+    color: skyblue;
+  }
+  p{
+    color: grey;
+  }
+  ul{
+    list-style: none;
+  }
+  li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 .header{
     background-image: url("images/hero.png");
@@ -26,11 +43,17 @@ body{
 a{
     text-decoration: none;
     color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
 button{
     padding: 10px;
-    background-color: rgb(33, 169, 179);
+    background-color: rgb(95, 236, 255);
     border: 0ch;
+    border-radius: 5px;
+    color: white;
 }
 .navbar{
     display: flex;
@@ -43,6 +66,7 @@ button{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     gap: 50px;
     width: 30%;
 }
@@ -65,6 +89,16 @@ button{
     width: 30%;
     margin: 5%;
 }
+.intro button{
+    border-radius: 50px;
+    color: white;
+    background-color: unset;
+    border: 1px white solid;
+}
+.intro button:hover{
+    background-color: aqua;
+    border: 0ch;
+}
 .examples{
     display: flex;
     flex-direction: row;
@@ -75,10 +109,14 @@ button{
 }
 .examplescontent{
     box-sizing: border-box;
-    width: 300px;
+    width: 280px;
     padding: 25px;
     background-color: white;
 
+}
+.examplescontent:hover{
+    background-color: aqua;
+    color: white;
 }
 .examples2{
     display: flex;
@@ -89,11 +127,13 @@ button{
     height: 300px;
 }
 .examplescontent2{
-    width: 200px;
+    width: 280px;
     padding: 10px;
 }
 .industry{
     text-align: center;
+    width: 30%;
+    align-self: center;
 }
 
 .profiles, .partners{
@@ -110,26 +150,43 @@ button{
     margin-top: 200px;
 }
 .prfile{
-    width: 200px;
+    max-width: 200px;
     padding: 10px;
     background-color: white;
-    padding: 10px;
+    padding: 30px;
     margin: 20px 0;
-    border: 1px rgb(219, 218, 218) solid;
+    border: 1px rgb(197, 195, 195) solid;
     text-align: center;
     border-radius: 5px;
+    
 }
 
 .newsletter{
-    background-image: linear-gradient(to right, blue, purple);
+    background-image: linear-gradient(to left, rgb(197, 51, 197), rgb(55, 60, 139));
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 30px;
     width: 70%;
     align-self: center;
     margin-top: 30px;
+    color: white;
+    font-size: 32px;
 }
-
+.form{
+    width:fit-content;
+    display: flex;
+    gap: 0;
+    border: 1px white solid;
+}
+.newsletter input, .newsletter button{
+    padding: 10px;
+    border-radius: 0%;
+    
+}
+.newsletter input{
+    width: 250px;
+    border: 0ch;
+}
 .pricing{
     display: flex;
     flex-direction: column;
@@ -138,37 +195,41 @@ button{
 .title{
     text-align: center;
 }
-.packages, .branches, .appointment, .consulting, .footer{
+.packages,  .appointment, .consulting, .footer{
     display: flex;
     justify-content: space-around;
 }
-.package, .footersect{
+.package{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 10px;
 }
 .branches{
     background-color: rgb(56, 56, 90);
-    height: 400px;
-    padding: 30px;
+    height: 500px;
+    padding: 70px 50px;
     color: white;
+    display: flex;
+    justify-content: space-evenly;
+
 }
 .branch{
-    width: 30%;
+     width: 30%; 
 
 }
 .appointment{
-    margin-top: -150px;
+    margin-top: -200px;
     gap: 0;
     width: 50%;
     align-self: center;
-    height: 400px;
+    height: fit-content;
 }
 .appointment img{
     width: 35%;
 }
-.appointment input{
+.appointment input, select{
     background-color: rgb(235, 234, 233);
     padding: 10px;
     border: rgb(177, 176, 176);
@@ -211,8 +272,29 @@ ul{
     height: 35px;
 }
 .consulting{
-    margin: 50px 0;
+    margin: 150px 0 0 1px;
+    align-items: center;
 }
 .footersect a{
     color: black;
+}
+.footer{
+    background-color: white;
+    padding: 20px 60px;
+}
+.footersect{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+  
 }
